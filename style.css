@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 360px;
+}
+
+/* NEW: High score styling */
+.high-score-board {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* NEW: Style for buttons when game is over */
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#reset-btn {
+    background-color: #28a745;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+#reset-btn:hover {
+    background-color: #218838;
+}
+
+.results {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#game-result {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.win { background-color: #d4edda; color: #155724; }
+.lose { background-color: #f8d7da; color: #721c24; }
+.tie { background-color: #fff3cd; color: #856404; }

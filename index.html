@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Pro Match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock, Paper, Scissors</h1>
+        
+        <!-- NEW: High Score Tracker -->
+        <div class="high-score-board">
+            🏆 All-Time High Score: <span id="high-score">0</span>
+        </div>
+
+        <div class="score-board">
+            <div>Player: <span id="player-score">0</span>/3</div>
+            <div>Computer: <span id="computer-score">0</span>/3</div>
+        </div>
+        
+        <!-- NEW: Id added to button container to lock them later -->
+        <div class="choices" id="choices-container">
+            <button onclick="playGame('rock')">🪨 Rock</button>
+            <button onclick="playGame('paper')">📄 Paper</button>
+            <button onclick="playGame('scissors')">✂️ Scissors</button>
+        </div>
+
+        <div class="results">
+            <p id="player-choice">Your Choice: -</p>
+            <p id="computer-choice">Computer Choice: -</p>
+            <h2 id="game-result">First to 3 points wins!</h2>
+        </div>
+
+        <button id="reset-btn" onclick="resetGame()">🔄 Reset Match</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
